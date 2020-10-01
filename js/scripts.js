@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 function buscaNoticias() {
-    let url = 'https://cors-anywhere.herokuapp.com/newsapi.org/v2/everything?source=google-news-br&language=pt&sortBy=publishedAt&qInTitle=queimada%20OR%20queimadas%20OR%20incendio%20OR%20incendios%20OR%20fumaca%20OR%20fumacas&apiKey=d441a0feb1bb4e8087336752c5ed55ac';
+    let url = 'http://cors-anywhere.herokuapp.com/newsapi.org/v2/everything?source=google-news-br&language=pt&sortBy=publishedAt&qInTitle=queimada%20OR%20queimadas%20OR%20incendio%20OR%20incendios%20OR%20fumaca%20OR%20fumacas&apiKey=d441a0feb1bb4e8087336752c5ed55ac';
     fetch(url).then(response => response.json())
         .then((data) => {
             noticias = (data);
